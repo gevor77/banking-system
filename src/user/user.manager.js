@@ -9,8 +9,6 @@ export const createUser = async (body, res) => {
         if (!email) {
           return await res.status(400).send("Email and Username cannot be empty");
         }
-    
-        // Check if email or usercreateAccountname already exists in the database
         const userExistQuery = `
           SELECT * FROM users
           WHERE email = ?`;

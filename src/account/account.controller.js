@@ -25,17 +25,14 @@ class AccountController {
     }
     getAccountByUserId(req, res) {
         const { id } = req.params;
-        // res.status(200).json({ id, name: 'John Doe', email: 'john@example.com' });
         return accountManager.getAccountsByUserId(id, res)
     }
     getAccount(req, res) {
         const { id } = req.params;
-        // res.status(200).json({ id, name: 'John Doe', email: 'john@example.com' });
         return accountManager.getAccount(id, res)
     }
     getTransferByUserId(req, res) {
         const { id } = req.params;
-        // res.status(200).json({ id, name: 'John Doe', email: 'john@example.com' });
         return accountManager.getTransferByUserId(id, res)
     }
     updateAccount(req, res) {
